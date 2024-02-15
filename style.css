@@ -108,36 +108,54 @@ nav a:hover {
     object-fit: cover;
 }
 
+
+
 @media screen and (max-width: 760px) {
+    nav {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .name {
+        padding: 1rem 0;
+    }
+
+    .dropbutton {
+        padding: 12px;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block; 
+        width: auto;
+        box-shadow: none; 
+    }
+
     .hero-container {
         grid-template-columns: 1fr;
     }
-    .column-left, .column-right {
-        padding: 0 1rem;
+
+    .column-left,
+    .column-right {
+        padding: 1rem; 
         text-align: center;
     }
+
     .image-cropper {
         width: 250px; 
         height: 250px;
         top: auto;
         left: auto;
-        margin: 1rem auto; 
+        margin: 1rem auto;
         position: static;
     }
-    .name {
-        padding: 0 1rem;
-    }
-    nav {
-        height: auto;
-        justify-content: center; 
-    }
-    .dropdown-content {
-        position: static;
-        display: block; 
-        width: auto; 
-        box-shadow: none; 
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
+
 
 
 footer {
