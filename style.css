@@ -100,7 +100,6 @@ nav a:hover {
     position: absolute;
     top: 35%; 
     left: 50%;
-    /* transform: translate(-50%, -50%); */
 }
 
 .hero-image {
@@ -113,7 +112,33 @@ nav a:hover {
     .hero-container {
         grid-template-columns: 1fr;
     }
+    .column-left, .column-right {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .image-cropper {
+        width: 250px; 
+        height: 250px;
+        top: auto;
+        left: auto;
+        margin: 1rem auto; 
+        position: static;
+    }
+    .name {
+        padding: 0 1rem;
+    }
+    nav {
+        height: auto;
+        justify-content: center; 
+    }
+    .dropdown-content {
+        position: static;
+        display: block; 
+        width: auto; 
+        box-shadow: none; 
+    }
 }
+
 
 footer {
     display: flex;
